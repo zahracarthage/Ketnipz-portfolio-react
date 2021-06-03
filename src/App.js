@@ -4,7 +4,7 @@ import HomePage from './Pages/HomePage';
 import {Switch, Route} from 'react-router-dom';
 import About from './Pages/About';
 import Portfolio from './Pages/Portfolio';
-import Contact from './Pages/Contact'; 
+import ContactPage from './Pages/ContactPage'; 
 import Blogs from './Pages/Blogs';
 
 function App() {
@@ -41,9 +41,10 @@ function App() {
             </Route>
 
             <Route path="/Contact" exact>
-               <Contact />
+               <ContactPage />
 
             </Route>
+
           </Switch>
 
          </div>

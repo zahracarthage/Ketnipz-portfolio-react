@@ -5,7 +5,7 @@ import SkillsSection from '../Components/SkillsSection';
 import Services from '../Components/Services';
 import proc from '../img/services.jpg' ;
 import disa from '../img/disa.jpg' ;
-import sleep from '../img/slepe.jpg' ;
+//import sleep from '../img/slepe.jpg' ;
 
 
 function About() {
