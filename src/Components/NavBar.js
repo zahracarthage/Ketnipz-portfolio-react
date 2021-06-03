@@ -43,7 +43,7 @@ export default function NavBar() {
 
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/Contact" exact activeClassName="active">
+                    <NavLink to="/ContactPage" exact activeClassName="active">
                         Contact
 
                     </NavLink>

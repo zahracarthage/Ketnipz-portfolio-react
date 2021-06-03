@@ -1,0 +1,71 @@
+.ContactItem{
+    width: 100%;
+    &:not(:last-child)
+    {
+        margin-bottom: 1rem;
+    }
+        .contact{
+        display: flex;
+        align-items: center;
+        background-color: #fff6f9;
+        padding: 1rem 0; 
+
+        .right-items{
+            margin-left: 2rem;
+
+        }
+        img{
+            padding: 1rem ;
+            border : 1px solid rgb(207, 147, 157); 
+            margin-left: 2rem;
+            width: 25%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+        .right-items {
+            h6{
+                color: #f9c3c3;
+                font-size: 1.4rem;
+                font-weight: 400;
+            }
+            p{
+                color : #f9c3c3;
+                font-size: 15px;
+            }
+        }
+    }
+
+}
+
+.ContactPage{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 6rem;
+    
+    .contact-sect{
+        width: 100%;
+    }
+}
+
+.map-sect
+{
+    width: 90% ;
+    padding: 1rem; 
+    background-color: #fff6f9;
+    iframe{
+
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.contact-sect{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.title{
+    margin-bottom: 5rem;
+}
