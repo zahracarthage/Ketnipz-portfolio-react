@@ -4,14 +4,35 @@
         height: 100vh;
         background-color: #fff6f9; 
         position: fixed;
+        z-index: 11;
         border-right: 1px;
+        transform-origin: left;
 
         @media screen and (max-width : 1000px)
         {
+            transition : all .4s ease-in-out;
+
             transform: translateX(-100%);
+            width: 30%;
+
+        }
+
+        
+        @media screen and (max-width : 411px)
+        {
+            
+            width: 50%;
+
         }
 
 
+    }
+    .nav-toggle{
+        @media screen and (max-width : 1000px)
+        {
+            transition : all .4s ease-in-out;
+            transform: translateX(0);
+        }
     }
     .main-content{
         width: 80%;
@@ -45,28 +66,29 @@
     position: absolute;
     z-index: 10;
     right: 10%;
-    left: 10%;
+    top: 5%;
     width: 4rem;
-   // background-color: red;
     height: 4rem;
+    display: none;
     display: flex;
     align-items: center;
-    cursor: pointer;
     justify-content: space-between;
-    .lines-1, .lines-2, .lines-3
-    {
+    cursor: pointer;
+    .lines-1, .lines-2, .lines-3{
         height: .4rem;
         width: 100%;
         background-color: salmon;
         pointer-events: none;
-        &:not(:last-child())
-        {
+        display: none;
+        border-radius: 20px;
+        &:not(:last-child){
             margin-bottom: .5rem;
-        
         }
     }
-    @media screen and (max-width :1000px){
+    @media screen and (max-width: 1000px){
         display: block;
+        .lines-1, .lines-2, .lines-3{
+            display: block;
+        }
     }
-    
 }

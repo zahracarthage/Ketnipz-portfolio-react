@@ -6,17 +6,24 @@ import About from './Pages/About';
 import Portfolio from './Pages/Portfolio';
 import ContactPage from './Pages/ContactPage'; 
 import Blogs from './Pages/Blogs';
+import { useState } from 'react';
 
 function App() {
+   const[navToggle, setnavToggle]= useState(false);
+
+   const navClick = ()=>{
+      setnavToggle(!navToggle)
+   }
+
   return (
     <div className="App">
 
-       <div className="sidebar">
+       <div className={`sidebar ${navToggle ? 'nav-toggle' : '' } `}>
 
          <NavBar />
 
        </div>
-       <div className="nav-btn">
+       <div className="nav-btn" onClick={navClick}>
          <div className="lines-1"></div>
          <div className="lines-2"></div>
          <div className="lines-3"></div>

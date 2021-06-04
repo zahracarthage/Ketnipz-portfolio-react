@@ -101,7 +101,7 @@
     color: black;
     margin-bottom: 1rem;
     transition: all .3s ease-in-out ;
-
+    
 
     &:not(:last-child)
     {
@@ -110,7 +110,6 @@
     &:hover{
         opacity: 100%;
 
-        
     }
     &:active{
         opacity: 100%;
@@ -128,4 +127,10 @@
     align-items: center;
     margin: 4rem 5rem;
     flex-wrap: wrap;
+    @media screen and (max-width: 1270px){
+        margin: 2rem 5rem;
+    }
+    @media screen and (max-width: 1100px){
+        margin: 2rem 2rem;
+    }
 }

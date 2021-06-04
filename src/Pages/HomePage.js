@@ -11,9 +11,9 @@ export default function HomePage() {
         <div className="HomePage">
                  <header className="hero">
                      <h1 className="hero-text">
-                Hi, I am kettnipz
+                Hi, 
 
-                <span> and I'm cute</span>
+                <span> I am ketnipz</span>
                      </h1>
 
                      <p className="h-sub-text">
