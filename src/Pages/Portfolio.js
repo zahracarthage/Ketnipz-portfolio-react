@@ -7,9 +7,22 @@ import { useState } from 'react';
 
 export default function Portfolio() {
 
-    const[categories,setCategories] = useState(null);
+    const allCategories = ['All', ...new Set(portfolios.map(item => item.category))]; 
+    
+    const[categories,setCategories] = useState(allCategories);
     const[menuItems,setMenuItems] = useState(portfolios); 
 
+    const filter = (category) =>{
+        if(category === 'All'){
+            setMenuItems(portfolios);
+            return ; 
+        }
+        const filteredData = portfolios.filter((item)=>{
+            return item.category === category;
+
+        })
+        setMenuItems(filteredData);
+    }
     return (
         <div className ="PortfolioPage">
             <div className="title">
@@ -18,7 +31,7 @@ export default function Portfolio() {
             </div>
             
             <div className="portfolios-page">
-                <Categories /> 
+                <Categories filter={filter} categories={categories}/> 
                 <MenuItems menuItems={menuItems} />
 
             </div>

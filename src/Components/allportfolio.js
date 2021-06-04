@@ -9,31 +9,28 @@ import port7 from '../img/portImages/school.jpg';
 const portfolios = [
     {
         id: 1,
-        category: 'graduation',
+        category: 'skool',
         link1: 'www.youtube.com',
         link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
+        icon1: 'See more',
         image: port7,
         title: 'graduated from ket skool'
     },
     {
         id: 2,
-        category: 'ghost skool',
+        category: 'skool',
         link1: 'www.youtube.com',
         link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
+        icon1: 'See more',
         image: port2,
         title: 'Turned into ghost but failed'
     },
     {
         id: 3,
-        category: 'Holli ket',
+        category: 'Holliket',
         link1: 'www.youtube.com',
         link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
+        icon1: 'See more',
         image: port3,
         title: 'pet ket and be god'
     },
@@ -42,28 +39,25 @@ const portfolios = [
         category: 'Magik',
         link1: 'www.youtube.com',
         link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
+        icon1: 'See more',
         image: port4,
         title: 'Magician'
     },
     {
         id: 5,
-        category: 'witchkraft',
+        category: 'Magik',
         link1: 'www.youtube.com',
         link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
+        icon1: 'See more',
         image: port6,
         title: 'failed witch attempt'
     },
     {
         id: 6,
-        category: 'Building',
+        category: 'Cooking',
         link1: 'www.youtube.com',
         link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
+        icon1: 'See more',
         image: port5,
         title: 'Built a pizza home'
     },
@@ -72,8 +66,7 @@ const portfolios = [
         category: 'Cooking',
         link1: 'www.youtube.com',
         link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
+        icon1: 'See more',
         image: port1,
         title: 'tri to master cook skilz'
     },

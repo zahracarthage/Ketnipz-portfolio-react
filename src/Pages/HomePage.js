@@ -13,7 +13,7 @@ export default function HomePage() {
                      <h1 className="hero-text">
                 Hi, I am kettnipz
 
-                <span>aasba lik</span>
+                <span> and I'm cute</span>
                      </h1>
 
                      <p className="h-sub-text">
@@ -25,15 +25,15 @@ export default function HomePage() {
                      </p>
 
                      <div className="icons">
-<Link  className="icon-holder">
+<Link  className="icon-holder"  >
 <FontAwesomeIcon icon={faFacebook} className="icon fb" />
 </Link>
 
-<Link className="icon-holder">
+<Link className="icon-holder" target="_blank" to={{ pathname : "https://twitter.com/zahracarthagech"}} >
 <FontAwesomeIcon icon={faTwitter} className="icon tw" />
 </Link>
 
-<Link className="icon-holder">
+<Link className="icon-holder" target="_blank" to={{ pathname : " https://github.com/zahracarthage/Ketnipz-portfolio-react"}}>
 <FontAwesomeIcon icon={faGithub} className="icon gh" />
 </Link>
                      </div>
